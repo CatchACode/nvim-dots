@@ -61,4 +61,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Colors
+vim.opt.termguicolors = true
+
 require 'config.lazy'
