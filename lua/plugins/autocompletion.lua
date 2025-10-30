@@ -3,6 +3,8 @@ return {
   event = 'InsertEnter',
   dependencies = {
     {
+      'hrsh7th/cmp-omni',
+      'lervag/vimtex',
       'L3MON4D3/LuaSnip',
       build = (function()
         if vim.fn.has 'win32' == 1 or vim.fn.executable 'make' == 0 then
@@ -54,6 +56,7 @@ return {
       sources = {
         { name = 'lazydev', group_index = 0 },
         { name = 'nvim_lsp' },
+        { name = 'omni' },
         { name = 'buffer' },
         { name = 'path' },
       },
