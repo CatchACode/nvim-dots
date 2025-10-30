@@ -177,18 +177,6 @@ return {
             },
           },
         },
-        hls = {
-          cmd = { 'haskell-language-server-wrapper', '--lsp' },
-          filetypes = { 'haskell, lhaskell', 'cabal' },
-          root_dir = lspconfig.util.root_pattern('hie.yaml', 'stack.yaml', 'cabal.project', '*.cabal', 'package.yaml'),
-          rootPatterns = { '*.cabal', 'stack.yaml', 'cabal.project', 'package.yaml', 'hie.yaml' },
-          settings = {
-            haskell = {
-              cabalFormattingProvider = 'cabalfmt',
-              formattingProvider = 'ormolu',
-            },
-          },
-        },
       }
       -- Ensure the servers and tools above are installed
       --  To check the current status of installed tools and/or manually install
